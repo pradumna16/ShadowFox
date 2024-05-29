@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/date_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date (yyyy-MM-dd)"/>
+
+    <EditText
+        android:id="@+id/steps_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Steps"/>
+
+    <EditText
+        android:id="@+id/calories_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Calories"/>
+
+    <EditText
+        android:id="@+id/stepduration_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Duration"/>
+
+    <EditText
+        android:id="@+id/water_intake_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Water Intake (ml)"/>
+
+    <EditText
+        android:id="@+id/sleep_duration_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Sleep Duration (hrs)"/>
+</LinearLayout>

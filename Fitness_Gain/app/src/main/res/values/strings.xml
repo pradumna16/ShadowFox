@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Fitness_Gain</string>
+    <string name="mapbox_access_token">sk.eyJ1Ijoic2hhbmtzMTIiLCJhIjoiY2x3bnIzeHRvMG81bDJtcnpmc3c1NzI4aCJ9.aVZtcIelydwYWD6KtByqjQ</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+</resources>

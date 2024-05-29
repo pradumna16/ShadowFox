@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "949822659566",
+    "project_id": "fitness-gain",
+    "storage_bucket": "fitness-gain.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:949822659566:android:7c9ed955e8497205210cff",
+        "android_client_info": {
+          "package_name": "com.thestart.fitness_gain"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZ10XCP1oBpUZczCvOxVpIUS4cPJfTuYs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

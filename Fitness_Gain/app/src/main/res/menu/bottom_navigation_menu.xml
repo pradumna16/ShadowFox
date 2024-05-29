@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/home"
+        android:title="@null"
+        android:icon="@drawable/homedash"/>
+    <item android:id="@+id/journal"
+        android:title="@null"
+        android:icon="@drawable/journaldash"/>
+    <item android:id="@+id/profile"
+        android:title="@null"
+        android:icon="@drawable/baseline_perm_identity_24"/>
+
+</menu>

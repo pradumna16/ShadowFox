@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_grad"
+    tools:context=".HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="80dp"
+
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_marginTop="15dp"
+                android:id="@+id/profile_imagedinfo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="centerCrop"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/circular_background"/>
+        </RelativeLayout>
+
+     <LinearLayout
+         android:layout_marginTop="-50dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:gravity="center">
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:orientation="vertical">
+             <TextView
+                 android:drawableTop="@drawable/foot_icon"
+                 android:id="@+id/step_progress_text"
+                 android:layout_width="wrap_content"
+                 android:layout_gravity="center"
+                 android:layout_height="wrap_content"
+                 android:text="Steps: 0/0"
+                 android:textColor="@color/white"
+                 android:textSize="18sp"
+                 android:layout_marginTop="16dp" />
+
+             <ProgressBar
+                 android:layout_gravity="center"
+                 android:layout_margin="26dp"
+                 android:id="@+id/step_progress_bar"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="8dp"
+                 android:progress="0"
+                 android:max="100"
+                 style="?android:attr/progressBarStyleHorizontal"
+                 android:progressDrawable="@drawable/progress_bar"
+                 />
+         </LinearLayout>
+         <LinearLayout
+             android:gravity="center"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+             <TextView
+                 android:paddingBottom="18dp"
+                 android:drawableTop="@drawable/burn_icon"
+                 android:id="@+id/calorie_progress_text"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Calories: 0/0"
+                 android:textColor="@color/white"
+                 android:textSize="18sp"
+                 android:layout_marginTop="16dp" />
+
+             <ProgressBar
+                 android:layout_gravity="center"
+                 android:layout_margin="26dp"
+                 android:id="@+id/calorie_progress_bar"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:progress="0"
+                 android:max="100"
+                 style="?android:attr/progressBarStyleHorizontal"
+                 android:progressDrawable="@drawable/progress_bar" />
+
+         </LinearLayout>
+
+
+
+
+
+     </LinearLayout>
+
+
+        <LinearLayout
+            android:paddingTop="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fitness_count"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:paddingRight="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/calorie_lay">
+
+                <TextView
+                    android:id="@+id/calorie_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="500"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cal"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingRight="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/km_lay">
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:id="@+id/km_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.12"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="KM"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/movemin_lay">
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:id="@+id/move_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00:00"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Move Min"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/steps_completed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/white"
+            android:text="Steps Completed: 0"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/start_step_activity_button"
+            android:backgroundTint="#00FFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Map Step "
+            android:textColor="@color/fill_color"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true" />
+
+
+
+        <RelativeLayout
+            android:background="@drawable/rounded_view"
+            android:elevation="8dp"
+            android:layout_margin="10dp"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/week_activity">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linear_goalcard"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your Daily Goals"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:id="@+id/textgoalview"/>
+
+                <ImageView
+                    android:backgroundTint="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_navigate_next_24"
+                    android:layout_marginStart="180dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/text_days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last 7 days"
+                android:layout_below="@id/linear_goalcard"/>
+
+            <LinearLayout
+                android:id="@+id/linear_week_progress"
+                android:layout_below="@id/text_days"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:id="@+id/text_week_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0/7"
+                    android:textSize="20sp"
+                    android:layout_marginEnd="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- Day 1 Progress View -->
+                    <LinearLayout
+                        android:background="@drawable/rounded_view"
+                        android:elevation="6dp"
+                        android:padding="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.thestart.fitness_gain.CircularProgressView
+                            android:layout_width="40dp"
+                            android:id="@+id/circular_progress_view_mon"
+                            android:layout_height="40dp"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:progress="30"
+                            android:max="100" />
+
+                        <TextView
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="M"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                    <!-- Day 2 Progress View -->
+                    <LinearLayout
+                        android:background="@drawable/rounded_view"
+                        android:padding="2dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.thestart.fitness_gain.CircularProgressView
+                            android:id="@+id/circular_progress_view_tue"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:progress="30"
+                            android:max="100" />
+
+                        <TextView
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="T"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                    <!-- Day 3 Progress View -->
+                    <LinearLayout
+                        android:background="@drawable/rounded_view"
+                        android:padding="2dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.thestart.fitness_gain.CircularProgressView
+                            android:id="@+id/circular_progress_view_wed"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:progress="30"
+                            android:max="100" />
+
+                        <TextView
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="W"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                    <!-- Day 4 Progress View -->
+                    <LinearLayout
+                        android:background="@drawable/rounded_view"
+                        android:padding="2dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.thestart.fitness_gain.CircularProgressView
+                            android:id="@+id/circular_progress_view_thu"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:progress="30"
+                            android:max="100" />
+
+                        <TextView
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="T"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                    <!-- Day 5 Progress View -->
+                    <LinearLayout
+                        android:background="@drawable/rounded_view"
+                        android:padding="2dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.thestart.fitness_gain.CircularProgressView
+                            android:id="@+id/circular_progress_view_fri"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:progress="30"
+                            android:max="100" />
+
+                        <TextView
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="F"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                    <!-- Day 6 Progress View -->
+                    <LinearLayout
+                        android:background="@drawable/rounded_view"
+                        android:padding="2dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.thestart.fitness_gain.CircularProgressView
+                            android:id="@+id/circular_progress_view_sat"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:progress="30"
+                            android:max="100" />
+
+                        <TextView
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="S"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                    <!-- Day 7 Progress View -->
+                    <LinearLayout
+                        android:background="@drawable/rounded_view"
+                        android:padding="2dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.thestart.fitness_gain.CircularProgressView
+                            android:id="@+id/circular_progress_view_sun"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:progress="30"
+                            android:max="100" />
+
+                        <TextView
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="S"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
