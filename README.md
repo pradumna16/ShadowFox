@@ -1,7 +1,7 @@
 # ShadowFox
 #Beginner
-https://github.com/pradumna16/Welcome_UI.git
-https://github.com/pradumna16/Shadow_CalculaterNew.git
+(1) https://github.com/pradumna16/Welcome_UI.git
+  (2 )https://github.com/pradumna16/Shadow_CalculaterNew.git
 
 #Intermediate
 
