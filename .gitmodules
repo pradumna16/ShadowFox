@@ -1,0 +1,9 @@
+[submodule "TO_DOlist1"]
+	path = TO_DOlist1
+	url = https://github.com/pradumna16/To_DOlist1
+[submodule "Shadow_Calculater"]
+	path = Shadow_Calculater
+	url = https://github.com/pradumna16/Shadow_CalculaterNew.git
+[submodule "Welcome_UI"]
+	path = Welcome_UI
+	url = https://github.com/pradumna16/Welcome_UI.git
